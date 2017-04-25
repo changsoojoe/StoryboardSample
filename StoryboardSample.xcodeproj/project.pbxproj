@@ -15,6 +15,7 @@
 		A5DD05201EAF176E00D7FFA8 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD051F1EAF176E00D7FFA8 /* PinkViewController.swift */; };
 		A5DD05221EAF1B1A00D7FFA8 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD05211EAF1B1A00D7FFA8 /* BlueViewController.swift */; };
 		A5DD05251EAF1BDC00D7FFA8 /* YelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD05241EAF1BDC00D7FFA8 /* YelloViewController.swift */; };
+		A5DD05281EAF310000D7FFA8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A5DD05271EAF310000D7FFA8 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A5DD051F1EAF176E00D7FFA8 /* PinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
 		A5DD05211EAF1B1A00D7FFA8 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		A5DD05241EAF1BDC00D7FFA8 /* YelloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelloViewController.swift; sourceTree = "<group>"; };
+		A5DD05271EAF310000D7FFA8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		A5DD05011EAF106300D7FFA8 = {
 			isa = PBXGroup;
 			children = (
+				A5DD05271EAF310000D7FFA8 /* .gitignore */,
 				A5DD050C1EAF106300D7FFA8 /* StoryboardSample */,
 				A5DD050B1EAF106300D7FFA8 /* Products */,
 			);
@@ -132,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DD05281EAF310000D7FFA8 /* .gitignore in Resources */,
 				A5DD05181EAF106300D7FFA8 /* LaunchScreen.storyboard in Resources */,
 				A5DD05151EAF106300D7FFA8 /* Assets.xcassets in Resources */,
 				A5DD05131EAF106300D7FFA8 /* Main.storyboard in Resources */,
