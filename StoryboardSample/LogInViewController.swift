@@ -1,5 +1,5 @@
 //
-//  YelloViewController.swift
+//  LogInViewController.swift
 //  StoryboardSample
 //
 //  Created by SDS-019 on 2017. 4. 25..
@@ -8,17 +8,10 @@
 
 import UIKit
 
-class YelloViewController: UIViewController {
+class LogInViewController: UIViewController {
 
-    @IBAction func close(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func goLogin(_ sender: Any) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "loginvc") {
-            self.present(vc, animated: true, completion: nil)
-        }
-    }
+    @IBOutlet var idTextField: UITextField!
+    @IBOutlet var pwTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +24,15 @@ class YelloViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    
+    @IBAction func loginClick(_ sender: Any) {
+        let userId = idTextField.text
+        let userPw = pwTextField.text
+        print("ID : \(userId) PW : \(userPw)")
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

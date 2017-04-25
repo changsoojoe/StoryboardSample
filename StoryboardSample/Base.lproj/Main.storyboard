@@ -127,6 +127,60 @@
             </objects>
             <point key="canvasLocation" x="1534" y="-189"/>
         </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="m3v-cY-UTV">
+            <objects>
+                <viewController storyboardIdentifier="loginvc" id="tBA-Je-so9" customClass="LogInViewController" customModule="StoryboardSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KQh-Cm-Wr1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xrt-2j-y61"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gPL-lp-Uac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LogIn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wus-8J-ufa">
+                                <rect key="frame" x="72" y="54" width="231" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Oh-C3-uPe">
+                                <rect key="frame" x="72" y="135" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibo-xc-g70">
+                                <rect key="frame" x="86" y="242" width="197" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="LogIn"/>
+                                <connections>
+                                    <action selector="loginClick:" destination="tBA-Je-so9" eventType="touchUpInside" id="7A3-jw-kec"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PW" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzc-qW-ntO">
+                                <rect key="frame" x="72" y="185" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.34815171174675674" blue="0.37493188540637901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="idTextField" destination="8Oh-C3-uPe" id="faH-IK-38x"/>
+                        <outlet property="pwTextField" destination="hzc-qW-ntO" id="l1S-jb-NvQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0B7-1C-edx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2222" y="111"/>
+        </scene>
         <!--Yello View Controller-->
         <scene sceneID="bzA-U6-yMg">
             <objects>
@@ -147,13 +201,22 @@
                                     <action selector="close:" destination="JJp-n2-wXy" eventType="touchUpInside" id="d00-M9-7Qu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csF-Ic-jcs">
+                                <rect key="frame" x="123" y="128" width="128" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="goLogin:" destination="JJp-n2-wXy" eventType="touchUpInside" id="Fyq-bd-AUp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97469060954379982" green="1" blue="0.61224106745580142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0h-ts-YOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1534" y="481"/>
+            <point key="canvasLocation" x="1533.5999999999999" y="480.80959520239884"/>
         </scene>
     </scenes>
 </document>
